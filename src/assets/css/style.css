@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+img {
+    border: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+address {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px !important;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Lobster&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+body{
+    overflow-x: hidden;
+    padding: 50px 0px;
+    background: url(../images/Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+/*font-family ends*/
+:root {
+    --primary-color: #00deff;
+    --secondary-color: #ff6896;
+    --text-color: #1b1b1b;
+    --white-color: #ffffff;
+    --red-color: #d90015;
+    --blue-color: #0695ee;
+    --green-color: #73ffdf;
+    --violate-color: #b400ff;
+}
+
+.navbar {
+    background: #444444;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+.navbar-light .navbar-brand a{
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+.navbar-light .navbar-brand a:focus, .navbar-brand a:hover {
+    color: var(--secondary-color);
+    transition: .3s;
+}
+.navbar-nav .nav-link a{
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: rgba(0,0,0,.1);
+    background: white;
+}
+.primaryButton{
+    background-color: var(--red-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+
+}
+.primaryButton:hover{
+    background-color: var(--blue-color);
+    transition: .3s;
+    color: var(--white-color);
+}
+.backBtn {
+    padding: 7px 16px;
+    background: var(--green-color);
+    font-size: 16px;
+    color: var(--text-color);
+    border: none;
+}
+.input-group {
+    margin: 30px 0px;
+}
+.title{
+    font-family: Kurale;
+    text-align: center;
+    font-size: 40px;
+    color: var(--secondary-color);
+    padding: 25px 0px;
+}
+
+.dashCard{
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+.dashCard img{
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.dashCard .card-title {
+    margin-bottom: 15px;
+    color: var(--blue-color);
+}
+
+.dashCard .card-text {
+    margin-bottom: 20px;
+}
+
+
+.myCard.card {
+    text-align: center;
+    position: relative;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 0px;
+}
+.myCard.card img{
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.myCard.card .card-body {
+    padding: 0px;
+}
+.myCard.card .card-body h4 {
+    font-size: 17px;
+    font-family: Raleway;
+    font-weight: 600;
+}
+.myCard.card .card-body h5 {
+    font-size: 14px;
+    margin: 5px 0px;
+}
+.myCard.card .card-body h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.myCard.card .card-body .type {
+    font-size: 12px;
+    margin: 5px 0px;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    background: var(--secondary-color);
+    padding: 3px 5px;
+    color: var(--white-color);
+}
+.myCard.card .card-body .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 0 0;
+    border-color: var(--secondary-color) transparent transparent transparent;
+    left: 0;
+    top: 0;
+}
+.myCard.card .card-body .serial {
+    position: absolute;
+    color: var(--white-color);
+    left: 2px;
+    top: 5px;
+    font-size: 13px;
+}
+.myCard.card .detailsBtn {
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 3px 9px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 0px;
+}
+.myCard.card .detailsBtn:hover{
+    background: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.form-control {
+    border: 1px solid var(--primary-color);
+}
+.form-control:focus {
+    color: #212529;
+    background-color: var(--white-color);
+    border-color: var(--secondary-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+.list-group-item {
+    text-align: right;
+    font-size: 22px;
+    color: var(--text-color);
+}
+.surahName {
+    font-size: 25px;
+    color: var(--red-color);
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+}
+.surahName::after {
+    position: absolute;
+    content: '';
+    width: 35%;
+    height: 2px;
+    background: var(--text-color);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -11px;
+}
+.noOfAyahs{
+    text-align: center;
+    color: var(--blue-color);
+    padding-top: 15px;
+    font-weight: 500;
+}
+.ayahDetails {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 15px 0px;
+    border-bottom: 1px solid #dddddd;
+    line-height: 30px;
+}
+.ayahDetails h4 {
+    font-weight: 450;
+    line-height: 40px;
+}
+.ayahDetails span {
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 13px;
+}
+
+
+/*SuraAudioList component start*/
+.surahCard{
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid var(--violate-color);
+    border-radius: 10px;
+    position: relative;
+}
+.surahCard .card-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: var(--violate-color);
+}
+
+.surahCard .card-text {
+    margin-bottom: 20px;
+}
+.ayahs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-top: 1px solid #c1c1c1;
+}
+.ayahs audio{
+    max-width: 20%;
+}
+.ayahs p {
+    max-width: 80%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+.surahNo {
+    position: absolute;
+    color: var(--white-color);
+    right: 5px;
+    background: var(--violate-color);
+    padding: 8px;
+    top: 4px;
+    border-radius: 0px 10px 0px 10px;
+}
+
+/*SuraAudioList component ends*/
+/*BanglaTranslation component start*/
+iframe {
+    border: 0;
+    height: 100vh;
+}
+/*BanglaTranslation component ends*/
+.copyright{
+    background: var(--text-color);
+    color: var(--white-color);
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.copyright a{
+    color: var(--primary-color);
+}
+.copyright a:hover{
+    color: var(--secondary-color);
+    transition: .3s;
+}
